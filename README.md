@@ -36,7 +36,7 @@ mitigate with hyperparameter tuning.
 # Acknowledgements
 
 - [Michael S. Ryoo](http://michaelryoo.com/): The first author of the paper.
-- [Google Developers Experts Program](https://developers.google.com/programs/experts/) and [JarvisLabs](https://jarvislabs.ai/) for providing credits to perform extensive experimentation on A100 GPUs.
+- [Google Developers Experts Program](https://developers.google.com/programs/experts/) and [JarvisLabs.ai](https://jarvislabs.ai/) for providing credits to perform extensive experimentation on A100 GPUs.
 
 
 # References
