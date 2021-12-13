@@ -30,8 +30,8 @@ We have also implemented the Token Learner v11 module which aligns with the [off
 | 8 | 8 | 54.898% | [Link](https://tensorboard.dev/experiment/0PpgYOq9RFWV9njX6NJQ2w/) |
 | 4 | 8 | 55.196% | [Link](https://tensorboard.dev/experiment/WUkrHbZASdu3zrfmY4ETZg/) |  
 
-We acknowledge that the results with this new TokenLearner module is slightly off
-than expected and this might mitigate with hyperparameter tuning.
+We acknowledge that the results with this new TokenLearner module are slightly off than expected and this might
+mitigate with hyperparameter tuning.
 
 # Acknowledgements
 
@@ -42,4 +42,5 @@ than expected and this might mitigate with hyperparameter tuning.
 # References
 
 [1] TokenLearner: What Can 8 Learned Tokens Do for Images and Videos?; Ryoo et al.; arXiv 2021; https://arxiv.org/abs/2106.11297
+
 [2] TokenLearner: Adaptive Space-Time Tokenization for Videos; Ryoo et al., NeurIPS 2021; https://openreview.net/forum?id=z-l1kpDXs88
