@@ -12,26 +12,28 @@ A TensorFlow implementation of TokenLearner: What Can 8 Learned Tokens Do for Im
 We report results training our mini ViT with and without the vanilla TokenLearner module here. 
 You can find the vanilla Token Learner module in the [`TokenLearner.ipynb`](https://github.com/ariG23498/TokenLearner/blob/master/TokenLearner.ipynb) notebook.
 
-| **TokenLearner** | **# tokens in<br> TokenLearner** | **Top-1 Acc<br>(Averaged across 5 runs)** | **TensorBoard** |
-|:---:|:---:|:---:|:---:|
-| N | - | 56.112% | [Link](https://tensorboard.dev/experiment/vkCwM49dQZ2RiK0ZT4mj7w/) |
-| Y | 8 | **56.55%** | [Link](https://tensorboard.dev/experiment/vkCwM49dQZ2RiK0ZT4mj7w/) |
-| N | - | 56.37% | [Link](https://tensorboard.dev/experiment/hdyJ4wznQROwqZTgbtmztQ/) |
-| Y | 4 | **56.4980%** | [Link](https://tensorboard.dev/experiment/hdyJ4wznQROwqZTgbtmztQ/) |
-| N | - (# Transformer layers: 8) | 55.36% | [Link](https://tensorboard.dev/experiment/sepBK5zNSaOtdCeEG6SV9w/) |
+| **TokenLearner** | **# tokens in<br> TokenLearner** | **Top-1 Acc<br>(Averaged across 5 runs)** | **GFLOPs** | **TensorBoard** |
+|:---:|:---:|:---:|:---:|:---:|
+| N | - | 56.112% | 0.0184 | [Link](https://tensorboard.dev/experiment/vkCwM49dQZ2RiK0ZT4mj7w/) |
+| Y | 8 | **56.55%** | **0.0153** | [Link](https://tensorboard.dev/experiment/vkCwM49dQZ2RiK0ZT4mj7w/) |
+| N | - | 56.37% | 0.0184 | [Link](https://tensorboard.dev/experiment/hdyJ4wznQROwqZTgbtmztQ/) |
+| Y | 4 | **56.4980%** | **0.0147** | [Link](https://tensorboard.dev/experiment/hdyJ4wznQROwqZTgbtmztQ/) |
+| N | - (# Transformer layers: 8) | 55.36% | 0.0359 | [Link](https://tensorboard.dev/experiment/sepBK5zNSaOtdCeEG6SV9w/) |
 
 ## TokenLearner v1.1
 
 We have also implemented the Token Learner v11 module which aligns with the [official implementation](https://github.com/google-research/scenic/blob/main/scenic/projects/token_learner/model.py). The Token Learner v11 module can be found in the [`TokenLearner-V1.1.ipynb`](https://github.com/ariG23498/TokenLearner/blob/master/TokenLearner-V1.1.ipynb) notebook. The results training with this module are as follows:
 
-| **# Groups** | **# Tokens** | **Top-1 Acc** | **TensorBoard** |
-|:---:|:---:|:---:|:---:|
-| 4 | 4 | 54.638% | [Link](https://tensorboard.dev/experiment/KmfkGqAGQjikEw85phySmw/) |
-| 8 | 8 | 54.898% | [Link](https://tensorboard.dev/experiment/0PpgYOq9RFWV9njX6NJQ2w/) |
-| 4 | 8 | 55.196% | [Link](https://tensorboard.dev/experiment/WUkrHbZASdu3zrfmY4ETZg/) |  
+| **# Groups** | **# Tokens** | **Top-1 Acc** | **GFLOPs** | **TensorBoard** |
+|:---:|:---:|:---:|:---:|:---:|
+| 4 | 4 | 54.638% | 0.0149 | [Link](https://tensorboard.dev/experiment/KmfkGqAGQjikEw85phySmw/) |
+| 8 | 8 | 54.898% | 0.0146 | [Link](https://tensorboard.dev/experiment/0PpgYOq9RFWV9njX6NJQ2w/) |
+| 4 | 8 | 55.196% | 0.0149 | [Link](https://tensorboard.dev/experiment/WUkrHbZASdu3zrfmY4ETZg/) |  
 
 We acknowledge that the results with this new TokenLearner module are slightly off than expected and this might
 mitigate with hyperparameter tuning.
+
+*Note*: To compute the FLOPs of our models we use [this utility](https://github.com/AdityaKane2001/regnety/blob/main/regnety/utils/model_utils.py#L27) from [this repository](https://github.com/AdityaKane2001/regnety).
 
 # Acknowledgements
 
