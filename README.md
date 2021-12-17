@@ -1,5 +1,7 @@
 # TokenLearner: What Can 8 Learned Tokens Do for Images and Videos?
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ariG23498/TokenLearner/blob/master/TokenLearner.ipynb) [![](https://img.shields.io/badge/blog-keras.io-%23d00000)](https://keras.io/examples/vision/token_learner/)
+
 <div align="center">
   <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiylT3_nmd9-tzTnz3g3Vb4eTn-L5sOwtGJOad6t2we7FsjXSpbLDpuPrlInAhtE5hGCA_PfYTJtrIOKfLYLYGcYXVh1Ksfh_C1ZC-C8gw6GKtvrQesKoMrEA_LU_Gd5srl5-3iZDgJc1iyCELoXtfuIXKJ2ADDHOBaUjhU8lXTVdr2E7bCVaFgVHHkmA=s1600"><br>
   <small>Source: <a href="https://ai.googleblog.com/2021/12/improving-vision-transformer-efficiency.html">Improving Vision Transformer Efficiency and Accuracy by Learning to Tokenize</a></small>
